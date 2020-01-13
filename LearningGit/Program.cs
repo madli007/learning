@@ -1,12 +1,22 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 namespace LearningGit
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            DoSomethingWithClassA();
+        }
+
+        private static void DoSomethingWithClassA()
+        {
+            var a = new ClassA(1, "name1");
+
+            a.DisplayInfo();
         }
     }
 }

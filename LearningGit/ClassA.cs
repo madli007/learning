@@ -4,10 +4,10 @@ using System.Text;
 
 namespace LearningGit
 {
-    class ClassA
+    internal class ClassA
     {
-        private int Id { get; set; }
-        private string Name { get; set; }
+        private int Id { get; }
+        private string Name { get; }
 
         public ClassA(int id, string name)
         {
